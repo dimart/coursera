@@ -1,3 +1,8 @@
+package playground
+
+/**
+  * Programmed by dmitriipetukhov on 4/15/17.
+  */
 object Main {
 
   private var idCount = 0
@@ -80,5 +85,11 @@ object Main {
     //      synchronization.
     //    2. A thread X that calls join on another thread Y is guaranteed to
     //      observe all the writes by thread Y after join returns.
+
+    // -----------
+
+    println("Pi = " + Pi.MonteCarloPiSeq(1000000))
+    println("Pi = " + Pi.MonteCarloPiPar(1000000))
+    println("Pi = " + Pi.MonteCarloPiTasks(1000000))
   }
 }

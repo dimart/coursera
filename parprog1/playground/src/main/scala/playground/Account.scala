@@ -1,3 +1,5 @@
+package playground
+
 
 class Account(private var amount: Int = 0) {
   def transfer(account: Account, n: Int): Unit = {

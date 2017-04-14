@@ -1,3 +1,5 @@
+package playground
+
 
 class SafeAccount(private var amount: Int = 0) {
 
